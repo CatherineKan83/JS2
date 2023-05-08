@@ -13,17 +13,12 @@ public class task1 {
         database.put("страна","Израиль");
         database.put("город","Иерусалим");
         database.put("возраст","26");
-        System.out.println("Введите ключевое слово для поиска:\n");
-        var search = System.console().readLine();
-        if(database.containsValue(search)){
-            System.out.println("Фамилия: " + database.get("фамилия"));
-            System.out.println("Имя: " + database.get("имя"));
-            System.out.println("Отчество: " + database.get("отчество"));
-            System.out.println("Страна: " + database.get("страна"));
-            System.out.println("Город: " + database.get("город"));
-            System.out.println("Возраст: " + database.get("возраст"));    
-        }
-        else System.out.println("Result not found.");
-        iScanner.close();
+        System.out.println("Select* from students WHERE \n");
+        System.out.println("Фамилия: " + database.get("фамилия"));
+        System.out.println("Имя: " + database.get("имя"));
+        System.out.println("Отчество: " + database.get("отчество"));
+        System.out.println("Страна: " + database.get("страна"));
+        System.out.println("Город: " + database.get("город"));
+        System.out.println("Возраст: " + database.get("возраст"));    
     }
 }
